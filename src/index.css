@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* --- BRAND COLORS (Primary Blue System) --- */
+    --color-primary: #3b82f6;
+    --color-primary-hover: #2563eb;
+    --color-primary-light: #eff6ff;
+    --color-primary-text: #1e40af;
+
+    /* --- ACCENT COLORS --- */
+    --color-indigo: #6366f1;
+    --color-indigo-light: #eef2ff;
+    --color-indigo-text: #4338ca;
+
+    --color-purple: #a855f7;
+    --color-purple-light: #faf5ff;
+    --color-purple-text: #7e22ce;
+
+    --color-emerald: #10b981;
+    --color-emerald-light: #ecfdf5;
+    --color-emerald-hover: #059669;
+
+    --color-teal: #14b8a6;
+    --color-teal-light: #f0fdfa;
+    --color-teal-text: #0f766e;
+
+    --color-amber: #f59e0b;
+    --color-amber-light: #fffbeb;
+    --color-amber-text: #d97706;
+
+    --color-rose: #f43f5e;
+    --color-rose-light: #fff1f2;
+    --color-rose-text: #e11d48;
+
+    /* --- STATUS COLORS --- */
+    --color-success: #10b981;
+    --color-success-bg: #ecfdf5;
+    --color-success-hover: #059669;
+    --color-success-text: #047857;
+
+    --color-danger: #ef4444;
+    --color-danger-bg: #fef2f2;
+    --color-danger-hover: #dc2626;
+    --color-danger-text: #b91c1c;
+
+    --color-warning: #f59e0b;
+    --color-warning-bg: #fffbeb;
+    --color-warning-text: #d97706;
+
+    --color-info: #3b82f6;
+    --color-info-bg: #eff6ff;
+    --color-info-text: #2563eb;
+
+    /* --- PAGE & LAYOUT --- */
+    --color-page: #f8fafc;
+    --color-card: #ffffff;
+    --color-border: #e2e8f0;
+    --color-border-hover: #cbd5e1;
+
+    /* --- TEXT COLORS --- */
+    --color-text-main: #0f172a;
+    --color-text-sub: #475569;
+    --color-text-muted: #94a3b8;
+    --color-text-inverse: #ffffff;
+
+    /* --- INPUTS --- */
+    --color-input-bg: #f8fafc;
+    --color-input-border: #cbd5e1;
+    --color-input-focus: #3b82f6;
+    --color-input-text: #0f172a;
+
+    /* --- SHADOWS --- */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  /* --- DARK MODE OVERRIDES --- */
+  .dark {
+    --color-primary: #3b82f6;
+    --color-primary-hover: #60a5fa;
+    --color-primary-light: #1e3a8a;
+
+    --color-page: #0f172a;
+    --color-card: #1e293b;
+    --color-border: #334155;
+
+    --color-text-main: #f3f4f6;
+    --color-text-sub: #94a3b8;
+    --color-text-muted: #64748b;
+  }
+
+  body {
+    @apply bg-[var(--color-page)] text-[var(--color-text-main)] font-sans antialiased transition-colors duration-300;
+  }
+}
+
+/* --- CUSTOM SCROLLBAR --- */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-[var(--color-input-border)] rounded-full;
+}
+
+/* =========================================================
+   THEME SETTINGS SUPPORT (APPENDED – DO NOT MODIFY)
+   Used by Settings page for dynamic theming + reset
+   ========================================================= */
+
+/* Snapshot LIGHT defaults (for reset) */
+:root {
+  --default-color-primary: var(--color-primary);
+  --default-color-indigo: var(--color-indigo);
+  --default-color-purple: var(--color-purple);
+  --default-color-emerald: var(--color-emerald);
+  --default-color-teal: var(--color-teal);
+  --default-color-amber: var(--color-amber);
+  --default-color-rose: var(--color-rose);
+
+  --default-color-page: var(--color-page);
+  --default-color-card: var(--color-card);
+  --default-color-border: var(--color-border);
+
+  --default-color-text-main: var(--color-text-main);
+  --default-color-text-sub: var(--color-text-sub);
+  --default-color-text-muted: var(--color-text-muted);
+
+  --default-color-input-bg: var(--color-input-bg);
+  --default-color-input-border: var(--color-input-border);
+  --default-color-input-focus: var(--color-input-focus);
+}
+
+/* Snapshot DARK defaults (for reset) */
+.dark {
+  --default-color-primary: var(--color-primary);
+  --default-color-page: var(--color-page);
+  --default-color-card: var(--color-card);
+  --default-color-border: var(--color-border);
+
+  --default-color-text-main: var(--color-text-main);
+  --default-color-text-sub: var(--color-text-sub);
+  --default-color-text-muted: var(--color-text-muted);
+}
