@@ -1,62 +1,48 @@
 {
-<<<<<<< HEAD
-  "name": "prajwaala-properties",
-  "version": "0.1.0",
+  "name": "admin-panel",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
-  },
-  "dependencies": {
-    "framer-motion": "^12.42.2",
-    "lucide-react": "^1.23.0",
-    "next": "16.2.10",
-    "react": "19.2.4",
-    "react-dom": "19.2.4"
-  },
-  "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.2.10",
-    "tailwindcss": "^4",
-    "typescript": "^5"
-=======
-  "name": "carwash-frontend",
-  "private": true,
-  "version": "1.0.0",
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview --host 0.0.0.0"
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@reduxjs/toolkit": "^2.2.7",
-    "axios": "^1.7.9",
+    "@reduxjs/toolkit": "^2.11.2",
+    "axios": "^1.13.2",
+    "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
     "exceljs": "^4.4.0",
-    "framer-motion": "^11.11.11",
-    "jspdf": "^2.5.2",
-    "jspdf-autotable": "^5.0.8",
-    "lucide-react": "^0.468.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-hot-toast": "^2.4.1",
-    "react-redux": "^9.0.2",
-    "react-router-dom": "^6.28.0",
-    "recharts": "^3.10.1",
+    "framer-motion": "^12.23.26",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^4.0.0",
+    "jspdf-autotable": "^5.0.7",
+    "lucide-react": "^0.562.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-hot-toast": "^2.6.0",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^7.11.0",
+    "react-toastify": "^11.0.5",
+    "recharts": "^3.6.0",
+    "sweetalert2": "^11.26.17",
+    "tailwind-merge": "^3.4.0",
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^4.3.3",
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.49",
-    "tailwindcss": "^3.4.15",
-    "vite": "^5.4.10"
->>>>>>> 9c7277acd201814962dab44ebcf17e2a561dbeaf
+    "@eslint/js": "^9.39.1",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "autoprefixer": "^10.4.23",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17",
+    "vite": "^7.2.4"
   }
 }
