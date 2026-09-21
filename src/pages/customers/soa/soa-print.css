@@ -1,0 +1,93 @@
+.soa-page-shell {
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+.soa-print-only {
+  display: none;
+}
+
+@media print {
+  @page {
+    size: A4 landscape;
+    margin: 0;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  html,
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 297mm !important;
+    height: 210mm !important;
+    overflow: hidden !important;
+    background: #ffffff !important;
+  }
+
+  body * {
+    visibility: hidden !important;
+  }
+
+  .soa-print-only {
+    display: block !important;
+  }
+
+  #printable-soa-slip,
+  #printable-soa-slip * {
+    visibility: visible !important;
+  }
+
+  aside,
+  header,
+  footer,
+  nav,
+  button,
+  .soa-no-print {
+    display: none !important;
+  }
+
+  #printable-soa-slip {
+    display: block !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 297mm !important;
+    height: 210mm !important;
+    margin: 0 !important;
+    padding: 8mm !important;
+    box-sizing: border-box !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: #ffffff !important;
+    z-index: 999999 !important;
+    overflow: hidden !important;
+    page-break-after: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  #printable-soa-slip table {
+    display: table !important;
+    border-collapse: collapse !important;
+  }
+
+  #printable-soa-slip thead {
+    display: table-header-group !important;
+  }
+
+  #printable-soa-slip tbody {
+    display: table-row-group !important;
+  }
+
+  #printable-soa-slip tr {
+    display: table-row !important;
+  }
+
+  #printable-soa-slip th,
+  #printable-soa-slip td {
+    display: table-cell !important;
+  }
+}
