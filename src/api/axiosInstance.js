@@ -4,7 +4,7 @@ import toast from "react-hot-toast";
 // HARDCODED BASE URL
 // This forces the request to be relative (e.g., https://your-site.scom/api/...)
 // It relies entirely on your proxy configuration (vercel.json or vite.config.js)
-const baseURL = import.meta.env.VITE_API_BASE_URL;
+const baseURL = import.meta.env.VITE_API_URL;
 
 const api = axios.create({
   baseURL: baseURL,
