@@ -6,7 +6,11 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
+<<<<<<< HEAD
         target: "https://carwash-backend-k3pk.onrender.com",
+=======
+        target: "https://carwash-backend-qznz.onrender.com",
+>>>>>>> 04c7292 (Update car wash frontend)
         changeOrigin: true,
         secure: false,
       },
