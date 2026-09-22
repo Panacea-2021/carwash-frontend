@@ -6,7 +6,7 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "https://api.babacarwash.com/api/:path*"
+      "destination": "https://carwash-backend-k3pk.onrender.com/api/:path*"
     },
     {
       "source": "/(.*)",

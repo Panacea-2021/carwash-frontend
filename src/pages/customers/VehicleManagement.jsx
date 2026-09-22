@@ -17,7 +17,9 @@ import ModalManager from "../../components/modals/ModalManager";
 import DeleteModal from "../../components/modals/DeleteModal";
 import usePagePermissions from "../../utils/usePagePermissions";
 
-const API_BASE = "https://api.babacarwash.com";
+import { API_ORIGIN } from "../../api/config";
+
+const API_BASE = API_ORIGIN || "https://carwash-backend-k3pk.onrender.com";
 
 const VehicleManagement = () => {
   const pp = usePagePermissions("vehicles");

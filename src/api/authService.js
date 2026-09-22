@@ -3,14 +3,21 @@ import api from "./axiosInstance";
 export const authService = {
   // Login
   login: async (credentials) => {
-    // credentials should be { number: "...", password: "..." }
     try {
-      // Removes /api from string because axiosInstance baseURL already has it
       const response = await api.post("/auth/signin", credentials);
       return response.data;
     } catch (error) {
-      // Return a clean error object
-      throw error.response ? error.response.data : { message: "Network Error" };
+      if (error.code === "ECONNABORTED") {
+        throw new Error(
+          "The server took too long to respond. Please try again.",
+        );
+      }
+      if (error.response?.data) {
+        throw error.response.data;
+      }
+      throw new Error(
+        error.message || "Network Error: the website could not reach the backend.",
+      );
     }
   },
 

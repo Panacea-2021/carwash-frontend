@@ -5,6 +5,7 @@
  * Manual: button_click, navigation, form_submit, search, filter, etc.
  */
 import api from "../api/axiosInstance";
+import { API_BASE_URL } from "../api/config";
 
 class AdminActivityTracker {
   constructor() {
@@ -511,8 +512,7 @@ class AdminActivityTracker {
 
     try {
       const token = localStorage.getItem("token");
-      const baseUrl = import.meta.env.VITE_API_BASE_URL || "";
-      const url = `${baseUrl}/admin-activities/batch`;
+      const url = `${API_BASE_URL}/admin-activities/batch`;
       const blob = new Blob([JSON.stringify({ activities: batch })], {
         type: "application/json",
       });

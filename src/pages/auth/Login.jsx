@@ -99,7 +99,11 @@ const Login = () => {
       }
     } catch (error) {
       console.error("Login Error:", error);
-      toast.error(error.message || "Invalid credentials");
+      toast.error(
+        error?.message ||
+          error?.error ||
+          "Invalid credentials or the website could not reach the backend.",
+      );
     } finally {
       setLoading(false);
     }
