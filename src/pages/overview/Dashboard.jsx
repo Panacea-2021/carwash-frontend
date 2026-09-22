@@ -851,7 +851,7 @@ const Dashboard = () => {
         >
           <div className="flex items-center gap-4">
             <h1 className="text-2xl font-black bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
-              Dashboard
+              Dashboard Testing
             </h1>
             <div className="flex items-center gap-2 px-3 py-1.5 bg-indigo-50 rounded-lg text-xs border border-indigo-100">
               <Calendar className="w-3 h-3 text-indigo-500" />
